@@ -376,15 +376,16 @@ a:focus-visible, button:focus-visible {
 
 .llegar__mapa {
   max-width: 48rem;
-  margin: 2.5rem auto 0;
+  margin: 2.8rem auto 0;
 }
 .llegar__mapa iframe {
   display: block;
+  width: 100%;
   border-radius: 2px;
 }
 .llegar__mapa-link {
   display: inline-block;
-  margin-top: 0.8rem;
+  margin-top: 0.9rem;
   font-size: 0.85rem;
   color: var(--brick);
   text-decoration: underline;
