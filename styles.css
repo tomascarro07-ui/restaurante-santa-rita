@@ -374,6 +374,22 @@ a:focus-visible, button:focus-visible {
   color: var(--brick-dark);
 }
 
+.llegar__mapa {
+  max-width: 48rem;
+  margin: 2.5rem auto 0;
+}
+.llegar__mapa iframe {
+  display: block;
+  border-radius: 2px;
+}
+.llegar__mapa-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  color: var(--brick);
+  text-decoration: underline;
+}
+
 /* ---------- Botón flotante ---------- */
 .floating-cta {
   position: fixed;
