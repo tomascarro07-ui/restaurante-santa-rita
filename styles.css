@@ -100,7 +100,33 @@ a:focus-visible, button:focus-visible {
   .topbar__nav { display: none; }
 }
 
-/* ---------- Hero: horizonte y atardecer ---------- */
+.lang-switch {
+  display: flex;
+  gap: 0.3rem;
+  background: rgba(0,0,0,0.2);
+  border-radius: 999px;
+  padding: 0.2rem;
+}
+.lang-switch button {
+  font-family: var(--body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--stone);
+  background: transparent;
+  border: none;
+  border-radius: 999px;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.lang-switch button:hover { color: var(--cream); }
+.lang-switch button.is-active {
+  background: var(--gold);
+  color: var(--river-deep);
+}
+
+/* ---------- Hero: foto real ---------- */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -108,56 +134,21 @@ a:focus-visible, button:focus-visible {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  isolation: isolate;
 }
 
-.hero__sky {
+.hero__img {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    #2A2144 0%,
-    #6B3350 28%,
-    #C15A3E 52%,
-    #E39A4D 64%,
-    #F2C169 70%
-  );
-  z-index: -3;
-}
-
-.hero__water {
-  position: absolute;
-  inset: 63% 0 0 0;
-  background: linear-gradient(to bottom, #F2C169 0%, #A3583A 12%, var(--river) 55%, var(--river-deep) 100%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   z-index: -2;
 }
 
-.hero__water::before {
-  content: "";
+.hero__overlay {
   position: absolute;
   inset: 0;
-  background: repeating-linear-gradient(
-    100deg,
-    rgba(251, 247, 238, 0.05) 0px,
-    rgba(251, 247, 238, 0.05) 2px,
-    transparent 2px,
-    transparent 34px
-  );
-  animation: shimmer 9s linear infinite;
-}
-
-@keyframes shimmer {
-  from { transform: translateX(0); }
-  to   { transform: translateX(60px); }
-}
-
-.hero__horizon {
-  position: absolute;
-  left: 0; right: 0;
-  top: 63%;
-  height: 2px;
-  background: linear-gradient(to right, transparent, var(--gold-light) 20%, var(--cream) 50%, var(--gold-light) 80%, transparent);
-  box-shadow: 0 0 18px 1px rgba(242, 193, 105, 0.6);
+  background: linear-gradient(to bottom, rgba(22,40,42,0.55) 0%, rgba(22,40,42,0.25) 45%, rgba(22,40,42,0.65) 100%);
   z-index: -1;
 }
 
@@ -166,7 +157,6 @@ a:focus-visible, button:focus-visible {
   text-align: center;
   color: var(--cream);
   padding: 0 1.5rem;
-  margin-top: -8vh;
 }
 
 .hero__content .eyebrow {
@@ -178,7 +168,7 @@ a:focus-visible, button:focus-visible {
   font-size: clamp(3.4rem, 11vw, 7.5rem);
   line-height: 0.95;
   color: var(--cream);
-  text-shadow: 0 4px 30px rgba(0,0,0,0.35);
+  text-shadow: 0 4px 30px rgba(0,0,0,0.45);
 }
 
 .hero__tag {
@@ -188,7 +178,7 @@ a:focus-visible, button:focus-visible {
   font-weight: 300;
   line-height: 1.55;
   color: var(--stone);
-  text-shadow: 0 1px 10px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 10px rgba(0,0,0,0.4);
 }
 
 .btn {
@@ -223,34 +213,6 @@ a:focus-visible, button:focus-visible {
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.hero__scroll {
-  position: absolute;
-  bottom: 2.4rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 26px;
-  height: 42px;
-  border: 1px solid rgba(251,247,238,0.6);
-  border-radius: 14px;
-  z-index: 1;
-}
-.hero__scroll span {
-  position: absolute;
-  top: 7px;
-  left: 50%;
-  width: 4px;
-  height: 8px;
-  margin-left: -2px;
-  border-radius: 2px;
-  background: var(--gold-light);
-  animation: scrollDown 1.8s ease-in-out infinite;
-}
-@keyframes scrollDown {
-  0%   { transform: translateY(0);   opacity: 1; }
-  70%  { transform: translateY(14px); opacity: 0; }
-  100% { transform: translateY(0);   opacity: 0; }
 }
 
 /* ---------- Historia ---------- */
