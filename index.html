@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,55 +15,56 @@
 <header class="topbar">
   <div class="topbar__brand">Santa Rita <span>· desde 2010</span></div>
   <nav class="topbar__nav">
-    <a href="#historia">Historia</a>
-    <a href="#vista">La vista</a>
-    <a href="#menu">Menú</a>
-    <a href="#reservas">Reservas</a>
+    <a href="#historia" data-i18n="nav.historia">Historia</a>
+    <a href="#vista" data-i18n="nav.vista">La vista</a>
+    <a href="#menu" data-i18n="nav.menu">Menú</a>
+    <a href="#reservas" data-i18n="nav.reservas">Reservas</a>
   </nav>
+  <div class="lang-switch" role="group" aria-label="Idioma / Language / Idioma">
+    <button type="button" data-lang="es" class="is-active">ES</button>
+    <button type="button" data-lang="pt">PT</button>
+    <button type="button" data-lang="en">EN</button>
+  </div>
 </header>
 
 <section class="hero">
-  <div class="hero__sky"></div>
-  <div class="hero__water"></div>
+  <img class="hero__img" src="img/foto-1.jpg" alt="Vista al Río de la Plata desde Santa Rita">
+  <div class="hero__overlay"></div>
   <div class="hero__content">
-    <p class="eyebrow">Restaurante · Parrilla · Marisquería</p>
+    <p class="eyebrow" data-i18n="hero.eyebrow">Restaurante · Parrilla · Marisquería</p>
     <h1>Santa Rita</h1>
-    <p class="hero__tag">Calle Santa Rita, con el frente sobre el Río de la Plata. Parrilla, mariscos y pescados, con uno de los mejores atardeceres de Colonia como fondo.</p>
+    <p class="hero__tag" data-i18n="hero.tag">Calle 16, con el frente sobre el Río de la Plata. Parrilla, mariscos y pescados, con uno de los mejores atardeceres de Colonia como fondo.</p>
     <div class="hero__ctas">
-      <a href="#reservas" class="btn">Reservar una mesa</a>
-      <a href="#vista" class="btn btn--ghost">Ver la vista</a>
+      <a href="#reservas" class="btn" data-i18n="hero.cta1">Reservar una mesa</a>
+      <a href="#vista" class="btn btn--ghost" data-i18n="hero.cta2">Ver la vista</a>
     </div>
   </div>
-  <div class="hero__horizon"></div>
-  <a href="#historia" class="hero__scroll" aria-label="Bajar para conocer más">
-    <span></span>
-  </a>
 </section>
 
 <section class="marker reveal" id="historia">
   <div class="marker__frame">
-    <p class="eyebrow eyebrow--dark">Un poco de historia</p>
-    <h2>Con el río de frente desde 2010</h2>
+    <p class="eyebrow eyebrow--dark" data-i18n="historia.eyebrow">Un poco de historia</p>
+    <h2 data-i18n="historia.h2">Con el río de frente desde 2010</h2>
     <div class="historia__grid">
-      <p>Santa Rita abrió sus puertas el 7 de octubre de 2010, en un lugar que ya elegía por sí solo: el frente da directo al Río de la Plata, y a esa hora en que el cielo se pone naranja, la vista se vuelve parte del menú.</p>
-      <p>El nombre honra a la santa patrona de los pescadores del barrio. No buscamos ser un restaurante de foto para el turista de paso: la carta es completa, la parrilla es de verdad, y el motivo por el que la gente vuelve es tan simple como sentarse a comer bien mirando el agua.</p>
+      <p data-i18n="historia.p1">Santa Rita abrió sus puertas el 7 de octubre de 2010, en un lugar que ya elegía por sí solo: el frente da directo al Río de la Plata, y a esa hora en que el cielo se pone naranja, la vista se vuelve parte del menú.</p>
+      <p data-i18n="historia.p2">El nombre honra a la santa patrona de los pescadores del barrio. No buscamos ser un restaurante de foto para el turista de paso: la carta es completa, la parrilla es de verdad, y el motivo por el que la gente vuelve es tan simple como sentarse a comer bien mirando el agua.</p>
     </div>
     <div class="historia__stats">
-      <div><strong>2010</strong><span>año de apertura</span></div>
-      <div><strong>1ª línea</strong><span>frente al Río de la Plata</span></div>
+      <div><strong>2010</strong><span data-i18n="historia.stat1">año de apertura</span></div>
+      <div><strong data-i18n="historia.stat2strong">1ª línea</strong><span data-i18n="historia.stat2">frente al Río de la Plata</span></div>
     </div>
   </div>
 </section>
 
 <section class="vista reveal" id="vista">
-  <p class="eyebrow eyebrow--light">La vista</p>
-  <h2>El atardecer que Colonia guarda para esta esquina</h2>
-  <p class="vista__copy">El frente de Santa Rita da directo al Río de la Plata. No hay nada en el medio: mesa, mantel, y el agua abriéndose hasta el horizonte a la hora en que cae el sol.</p>
+  <p class="eyebrow eyebrow--light" data-i18n="vista.eyebrow">La vista</p>
+  <h2 data-i18n="vista.h2">El atardecer que Colonia guarda para esta esquina</h2>
+  <p class="vista__copy" data-i18n="vista.copy">El frente de Santa Rita da directo al Río de la Plata. No hay nada en el medio: mesa, mantel, y el agua abriéndose hasta el horizonte a la hora en que cae el sol.</p>
 </section>
 
 <section class="galeria reveal">
-  <p class="eyebrow eyebrow--dark">La casa</p>
-  <h2>Así se ve Santa Rita</h2>
+  <p class="eyebrow eyebrow--dark" data-i18n="galeria.eyebrow">La casa</p>
+  <h2 data-i18n="galeria.h2">Así se ve Santa Rita</h2>
   <div class="galeria__grid">
     <figure class="ph">
       <img src="img/foto-1.jpg" alt="Vista al Río de la Plata desde Santa Rita" loading="lazy">
@@ -80,68 +82,68 @@
 </section>
 
 <section class="menu reveal" id="menu">
-  <p class="eyebrow eyebrow--dark">La mesa</p>
-  <h2>Parrilla, mariscos y pescados</h2>
-  <p class="menu__intro">Un menú completo frente al río: carnes a la parrilla, arroces y paellas de mariscos, y pescados frescos. Esta es una selección — la carta completa está disponible en el salón y para delivery por PedidosYa.</p>
+  <p class="eyebrow eyebrow--dark" data-i18n="menu.eyebrow">La mesa</p>
+  <h2 data-i18n="menu.h2">Parrilla, mariscos y pescados</h2>
+  <p class="menu__intro" data-i18n="menu.intro">Un menú completo frente al río: carnes a la parrilla, arroces y paellas de mariscos, y pescados frescos. Esta es una selección — la carta completa está disponible en el salón y para delivery por PedidosYa.</p>
 
   <div class="menu__grid">
     <article class="dish">
-      <h3>🥩 Nuestra parrilla</h3>
+      <h3 data-i18n="menu.parrilla.h3">🥩 Nuestra parrilla</h3>
       <ul>
-        <li>Bife ancho a la parrilla</li>
-        <li>Ojo de bife</li>
-        <li>Costillas de cordero</li>
+        <li data-i18n="menu.parrilla.1">Bife ancho a la parrilla</li>
+        <li data-i18n="menu.parrilla.2">Ojo de bife</li>
+        <li data-i18n="menu.parrilla.3">Costillas de cordero</li>
       </ul>
     </article>
     <article class="dish">
-      <h3>🦐 Mariscos y arroces</h3>
+      <h3 data-i18n="menu.mariscos.h3">🦐 Mariscos y arroces</h3>
       <ul>
-        <li>Paella de mariscos</li>
-        <li>Arroz negro de mariscos</li>
-        <li>Risotto de camarones</li>
+        <li data-i18n="menu.mariscos.1">Paella de mariscos</li>
+        <li data-i18n="menu.mariscos.2">Arroz negro de mariscos</li>
+        <li data-i18n="menu.mariscos.3">Risotto de camarones</li>
       </ul>
     </article>
     <article class="dish">
-      <h3>🐟 Pescados</h3>
+      <h3 data-i18n="menu.pescados.h3">🐟 Pescados</h3>
       <ul>
-        <li>Salmón grillado</li>
-        <li>Pesca del día a la manteca</li>
-        <li>Merluza rellena de mariscos</li>
+        <li data-i18n="menu.pescados.1">Salmón grillado</li>
+        <li data-i18n="menu.pescados.2">Pesca del día a la manteca</li>
+        <li data-i18n="menu.pescados.3">Merluza rellena de mariscos</li>
       </ul>
     </article>
   </div>
 
-  <a href="https://www.pedidosya.com.uy/restaurantes/colonia-del-sacramento/santa-rita-colonia-menu" target="_blank" rel="noopener" class="btn menu__pedidosya">Ver carta completa y pedir por PedidosYa</a>
+  <a href="https://www.pedidosya.com.uy/restaurantes/colonia-del-sacramento/santa-rita-colonia-menu" target="_blank" rel="noopener" class="btn menu__pedidosya" data-i18n="menu.pedidosya">Ver carta completa y pedir por PedidosYa</a>
 </section>
 
 <section class="llegar reveal">
-  <p class="eyebrow eyebrow--dark">Cómo llegar</p>
-  <h2>Calle 16, con el río de frente</h2>
-  <p class="llegar__copy">Santa Rita está en calle 16, Colonia del Sacramento, con el frente directo al Río de la Plata. Si vas a buscar el atardecer, llegá un rato antes de que caiga el sol.</p>
+  <p class="eyebrow eyebrow--dark" data-i18n="llegar.eyebrow">Cómo llegar</p>
+  <h2 data-i18n="llegar.h2">Calle 16, con el río de frente</h2>
+  <p class="llegar__copy" data-i18n="llegar.copy">Santa Rita está en calle 16, Colonia del Sacramento, con el frente directo al Río de la Plata. Si vas a buscar el atardecer, llegá un rato antes de que caiga el sol.</p>
   <div class="llegar__chips">
-    <span>Frente al Río de la Plata</span>
-    <span>Delivery por PedidosYa</span>
+    <span data-i18n="llegar.chip1">Frente al Río de la Plata</span>
+    <span data-i18n="llegar.chip2">Delivery por PedidosYa</span>
   </div>
 </section>
 
 <section class="reservas reveal" id="reservas">
   <div class="reservas__frame">
-    <p class="eyebrow eyebrow--light">Los esperamos</p>
-    <h2>Una mesa frente al Río de la Plata lo espera</h2>
-    <p>Abierto todos los días de 12:00 a 16:00 y de 19:30 a 23:30. Reservá con anticipación, sobre todo si querés estar antes de que caiga el sol.</p>
+    <p class="eyebrow eyebrow--light" data-i18n="reservas.eyebrow">Los esperamos</p>
+    <h2 data-i18n="reservas.h2">Una mesa frente al Río de la Plata lo espera</h2>
+    <p data-i18n="reservas.copy">Abierto todos los días de 12:00 a 16:00 y de 19:30 a 23:30. Reservá con anticipación, sobre todo si querés estar antes de que caiga el sol.</p>
     <div class="reservas__actions">
-      <a href="tel:+59800000000" class="btn btn--outline">Llamar al restaurante</a>
-      <a href="https://wa.me/59800000000" class="btn">Reservar por WhatsApp</a>
+      <a href="tel:+59800000000" class="btn btn--outline" data-i18n="reservas.call">Llamar al restaurante</a>
+      <a href="https://wa.me/59800000000" class="btn" data-i18n="reservas.whatsapp">Reservar por WhatsApp</a>
     </div>
   </div>
 </section>
 
 <footer class="footer">
-  <p>Santa Rita · Restaurante, Parrilla y Marisquería · Calle 16, Colonia del Sacramento, Uruguay</p>
-  <p class="footer__since">Desde 2010, con el río de frente.</p>
+  <p data-i18n="footer.line1">Santa Rita · Restaurante, Parrilla y Marisquería · Calle 16, Colonia del Sacramento, Uruguay</p>
+  <p class="footer__since" data-i18n="footer.line2">Desde 2010, con el río de frente.</p>
 </footer>
 
-<a href="https://wa.me/59800000000" class="floating-cta">Reservar</a>
+<a href="https://wa.me/59800000000" class="floating-cta" data-i18n="floating.reservar">Reservar</a>
 
 <script>
   const revealEls = document.querySelectorAll('.reveal');
@@ -158,6 +160,84 @@
   } else {
     revealEls.forEach(el => el.classList.add('is-visible'));
   }
+
+  const translations = {
+    es: {},
+    pt: {
+      "nav.historia": "História", "nav.vista": "A vista", "nav.menu": "Cardápio", "nav.reservas": "Reservas",
+      "hero.eyebrow": "Restaurante · Churrascaria · Marisqueira",
+      "hero.tag": "Calle 16, com a frente sobre o Rio da Prata. Carnes, frutos do mar e peixes, com um dos melhores pores do sol de Colônia como cenário.",
+      "hero.cta1": "Reservar uma mesa", "hero.cta2": "Ver a vista",
+      "historia.eyebrow": "Um pouco de história", "historia.h2": "Com o rio de frente desde 2010",
+      "historia.p1": "Santa Rita abriu suas portas em 7 de outubro de 2010, num lugar que já se escolhia sozinho: a frente dá direto para o Rio da Prata, e na hora em que o céu fica laranja, a vista vira parte do cardápio.",
+      "historia.p2": "O nome homenageia a santa padroeira dos pescadores do bairro. Não buscamos ser um restaurante só para foto de turista: o cardápio é completo, a churrasqueira é de verdade, e o motivo pelo qual as pessoas voltam é simples: comer bem olhando para a água.",
+      "historia.stat1": "ano de abertura", "historia.stat2strong": "1ª linha", "historia.stat2": "de frente para o Rio da Prata",
+      "vista.eyebrow": "A vista", "vista.h2": "O pôr do sol que Colônia guarda para esta esquina",
+      "vista.copy": "A frente do Santa Rita dá direto para o Rio da Prata. Não há nada no meio: mesa, toalha, e a água se abrindo até o horizonte na hora em que o sol se põe.",
+      "galeria.eyebrow": "A casa", "galeria.h2": "Assim é o Santa Rita",
+      "menu.eyebrow": "A mesa", "menu.h2": "Churrasco, frutos do mar e peixes",
+      "menu.intro": "Um cardápio completo de frente para o rio: carnes na brasa, arrozes e paellas de frutos do mar, e peixes frescos. Esta é uma seleção — o cardápio completo está disponível no salão e para delivery pelo PedidosYa.",
+      "menu.parrilla.h3": "🥩 Nossa churrasqueira", "menu.parrilla.1": "Bife ancho na brasa", "menu.parrilla.2": "Bife de olho", "menu.parrilla.3": "Costelinha de cordeiro",
+      "menu.mariscos.h3": "🦐 Frutos do mar e arrozes", "menu.mariscos.1": "Paella de frutos do mar", "menu.mariscos.2": "Arroz negro de frutos do mar", "menu.mariscos.3": "Risoto de camarão",
+      "menu.pescados.h3": "🐟 Peixes", "menu.pescados.1": "Salmão grelhado", "menu.pescados.2": "Peixe do dia na manteiga", "menu.pescados.3": "Merluza recheada com frutos do mar",
+      "menu.pedidosya": "Ver cardápio completo e pedir pelo PedidosYa",
+      "llegar.eyebrow": "Como chegar", "llegar.h2": "Calle 16, com o rio de frente",
+      "llegar.copy": "O Santa Rita fica na calle 16, Colônia do Sacramento, com a frente direto para o Rio da Prata. Se você for buscar o pôr do sol, chegue um pouco antes.",
+      "llegar.chip1": "De frente para o Rio da Prata", "llegar.chip2": "Delivery pelo PedidosYa",
+      "reservas.eyebrow": "Esperamos por você", "reservas.h2": "Uma mesa de frente para o Rio da Prata espera por você",
+      "reservas.copy": "Aberto todos os dias das 12:00 às 16:00 e das 19:30 às 23:30. Reserve com antecedência, principalmente se quiser estar lá antes do pôr do sol.",
+      "reservas.call": "Ligar para o restaurante", "reservas.whatsapp": "Reservar pelo WhatsApp",
+      "footer.line1": "Santa Rita · Restaurante, Churrascaria e Marisqueira · Calle 16, Colônia do Sacramento, Uruguai",
+      "footer.line2": "Desde 2010, com o rio de frente.",
+      "floating.reservar": "Reservar"
+    },
+    en: {
+      "nav.historia": "History", "nav.vista": "The view", "nav.menu": "Menu", "nav.reservas": "Reservations",
+      "hero.eyebrow": "Restaurant · Grill · Seafood",
+      "hero.tag": "Calle 16, facing the Río de la Plata. Grilled meats, seafood and fish, with one of the best sunsets in Colonia as a backdrop.",
+      "hero.cta1": "Book a table", "hero.cta2": "See the view",
+      "historia.eyebrow": "A bit of history", "historia.h2": "Facing the river since 2010",
+      "historia.p1": "Santa Rita opened on October 7, 2010, in a spot that chose itself: the front faces the Río de la Plata directly, and at the hour the sky turns orange, the view becomes part of the menu.",
+      "historia.p2": "The name honors the patron saint of the neighborhood's fishermen. We're not aiming to be a restaurant just for tourist photos: the menu is extensive, the grill is the real thing, and the reason people come back is as simple as sitting down to eat well while looking at the water.",
+      "historia.stat1": "year opened", "historia.stat2strong": "1st row", "historia.stat2": "facing the Río de la Plata",
+      "vista.eyebrow": "The view", "vista.h2": "The sunset Colonia keeps for this corner",
+      "vista.copy": "The front of Santa Rita faces the Río de la Plata directly. Nothing in between: table, tablecloth, and the water opening up to the horizon as the sun goes down.",
+      "galeria.eyebrow": "The place", "galeria.h2": "This is Santa Rita",
+      "menu.eyebrow": "The table", "menu.h2": "Grill, seafood and fish",
+      "menu.intro": "A full menu facing the river: grilled meats, seafood rice dishes and paellas, and fresh fish. This is a selection — the full menu is available in the dining room and for delivery via PedidosYa.",
+      "menu.parrilla.h3": "🥩 From the grill", "menu.parrilla.1": "Grilled wide strip steak", "menu.parrilla.2": "Ribeye", "menu.parrilla.3": "Lamb ribs",
+      "menu.mariscos.h3": "🦐 Seafood & rice", "menu.mariscos.1": "Seafood paella", "menu.mariscos.2": "Black seafood rice", "menu.mariscos.3": "Shrimp risotto",
+      "menu.pescados.h3": "🐟 Fish", "menu.pescados.1": "Grilled salmon", "menu.pescados.2": "Catch of the day in butter sauce", "menu.pescados.3": "Hake stuffed with seafood",
+      "menu.pedidosya": "See full menu and order on PedidosYa",
+      "llegar.eyebrow": "How to get here", "llegar.h2": "Calle 16, facing the river",
+      "llegar.copy": "Santa Rita is on Calle 16, Colonia del Sacramento, facing the Río de la Plata directly. If you're coming for the sunset, arrive a little early.",
+      "llegar.chip1": "Facing the Río de la Plata", "llegar.chip2": "Delivery via PedidosYa",
+      "reservas.eyebrow": "We're waiting for you", "reservas.h2": "A table facing the Río de la Plata is waiting",
+      "reservas.copy": "Open every day from 12:00 to 16:00 and 19:30 to 23:30. Book ahead, especially if you want to be there before sunset.",
+      "reservas.call": "Call the restaurant", "reservas.whatsapp": "Book via WhatsApp",
+      "footer.line1": "Santa Rita · Restaurant, Grill & Seafood · Calle 16, Colonia del Sacramento, Uruguay",
+      "footer.line2": "Since 2010, facing the river.",
+      "floating.reservar": "Book"
+    }
+  };
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    translations.es[el.getAttribute('data-i18n')] = el.textContent;
+  });
+
+  document.querySelectorAll('.lang-switch button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('data-lang');
+      document.documentElement.lang = lang;
+      document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const text = translations[lang][key];
+        if (text) el.textContent = text;
+      });
+    });
+  });
 </script>
 
 </body>
